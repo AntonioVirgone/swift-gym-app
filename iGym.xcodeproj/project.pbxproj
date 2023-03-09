@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F93C7A2E29B9BBFA006C393B /* SecondDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C7A2D29B9BBFA006C393B /* SecondDayView.swift */; };
+		F93C7A3029B9CCF8006C393B /* ThirdDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C7A2F29B9CCF8006C393B /* ThirdDayView.swift */; };
 		F94405DF29B7241C00D60DDA /* iGymApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94405DE29B7241C00D60DDA /* iGymApp.swift */; };
 		F94405E129B7241C00D60DDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94405E029B7241C00D60DDA /* ContentView.swift */; };
 		F94405E329B7241F00D60DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F94405E229B7241F00D60DDA /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 		F94405F029B7242000D60DDA /* iGymTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94405EF29B7242000D60DDA /* iGymTests.swift */; };
 		F94405FA29B7242000D60DDA /* iGymUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94405F929B7242000D60DDA /* iGymUITests.swift */; };
 		F94405FC29B7242000D60DDA /* iGymUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94405FB29B7242000D60DDA /* iGymUITestsLaunchTests.swift */; };
+		F944060B29B7251B00D60DDA /* FirstDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944060A29B7251B00D60DDA /* FirstDayView.swift */; };
+		F944060D29B745A900D60DDA /* ColorRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944060C29B745A900D60DDA /* ColorRGB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F93C7A2D29B9BBFA006C393B /* SecondDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDayView.swift; sourceTree = "<group>"; };
+		F93C7A2F29B9CCF8006C393B /* ThirdDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdDayView.swift; sourceTree = "<group>"; };
 		F94405DB29B7241C00D60DDA /* iGym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGym.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94405DE29B7241C00D60DDA /* iGymApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGymApp.swift; sourceTree = "<group>"; };
 		F94405E029B7241C00D60DDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +50,8 @@
 		F94405F529B7242000D60DDA /* iGymUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iGymUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94405F929B7242000D60DDA /* iGymUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGymUITests.swift; sourceTree = "<group>"; };
 		F94405FB29B7242000D60DDA /* iGymUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGymUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F944060A29B7251B00D60DDA /* FirstDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDayView.swift; sourceTree = "<group>"; };
+		F944060C29B745A900D60DDA /* ColorRGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRGB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +102,12 @@
 		F94405DD29B7241C00D60DDA /* iGym */ = {
 			isa = PBXGroup;
 			children = (
+				F944060829B724F400D60DDA /* view */,
 				F94405DE29B7241C00D60DDA /* iGymApp.swift */,
 				F94405E029B7241C00D60DDA /* ContentView.swift */,
 				F94405E229B7241F00D60DDA /* Assets.xcassets */,
 				F94405E429B7241F00D60DDA /* Preview Content */,
+				F944060C29B745A900D60DDA /* ColorRGB.swift */,
 			);
 			path = iGym;
 			sourceTree = "<group>";
@@ -125,6 +135,24 @@
 				F94405FB29B7242000D60DDA /* iGymUITestsLaunchTests.swift */,
 			);
 			path = iGymUITests;
+			sourceTree = "<group>";
+		};
+		F944060829B724F400D60DDA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F944060929B7250B00D60DDA /* home */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F944060929B7250B00D60DDA /* home */ = {
+			isa = PBXGroup;
+			children = (
+				F944060A29B7251B00D60DDA /* FirstDayView.swift */,
+				F93C7A2D29B9BBFA006C393B /* SecondDayView.swift */,
+				F93C7A2F29B9CCF8006C393B /* ThirdDayView.swift */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F944060B29B7251B00D60DDA /* FirstDayView.swift in Sources */,
 				F94405E129B7241C00D60DDA /* ContentView.swift in Sources */,
+				F93C7A2E29B9BBFA006C393B /* SecondDayView.swift in Sources */,
 				F94405DF29B7241C00D60DDA /* iGymApp.swift in Sources */,
+				F944060D29B745A900D60DDA /* ColorRGB.swift in Sources */,
+				F93C7A3029B9CCF8006C393B /* ThirdDayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iGym/Preview Content\"";
+				DEVELOPMENT_TEAM = 2DMW5G3LV8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iGym/Preview Content\"";
+				DEVELOPMENT_TEAM = 2DMW5G3LV8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
