@@ -1,0 +1,59 @@
+[
+    {
+        "title": "Circuito 1:",
+        "excercises": [
+            {
+                "value": "Cardio tapy 5’ cammino + 10’ (alterno 1’ corsa e 1’ cammino)"
+            },
+            {
+                "value": "Leg Press ",
+                "serie":4,
+                "ripetizioni": 15,
+                "riposo": 60
+            },
+            {
+                "value": "Leg Extension ",
+                "serie":3,
+                "ripetizioni": 15,
+                "riposo": 60
+            }
+        ]
+    },
+    {
+        "title": "Circuito 2: 4 serie (rest.2’)",
+        "excercises": [
+            {
+                "value": "Squat con kettleball 20"
+            },
+            {
+                "value": "Skeep alto 30 secondi"
+            },
+            {
+                "value": "Step up continuo 60 secondi a gamba"
+            },
+            {
+                "value": "Plank max"
+            }
+        ]
+    },
+    {
+        "title": "Circuito 3:",
+        "excercises": [
+            {
+                "value": "Climbe 10 minuti"
+            },
+            {
+                "value": "Crunch ",
+                "serie":3,
+                "ripetizioni": 20,
+                "riposo": 30
+            },
+            {
+                "value": "Crunch obliqui ",
+                "serie":3,
+                "ripetizioni": 50,
+                "riposo": 30
+            }
+        ]
+    }
+]

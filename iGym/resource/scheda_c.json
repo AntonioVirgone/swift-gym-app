@@ -1,0 +1,66 @@
+[
+    {
+        "title": "Circuito 1:",
+        "excercises": [
+            {
+                "value": "Air Bike 10 minuti (1’ 150 watt 30’’ 250 watt)"
+            },
+            {
+                "value": "Leg Press 45° ",
+                "serie":4,
+                "ripetizioni": 15,
+                "riposo": 60
+            },
+            {
+                "value": "Squat + Overhead Press ",
+                "serie":4,
+                "ripetizioni": 15,
+                "riposo": 60
+            },
+            {
+                "value": "Chest Incline + Alzate laterali ",
+                "serie":3,
+                "ripetizioni": 10,
+                "riposo": 60
+            },
+            {
+                "value": "High pull + high pull inverso ",
+                "serie":3,
+                "ripetizioni": 12,
+                "riposo": 60
+            },
+            {
+                "value": "Curl Manubri + Tricipiti sopra la testa ",
+                "serie":3,
+                "ripetizioni": 12,
+                "riposo": 60
+            }
+        ]
+    },
+    {
+        "title": "Circuito 2",
+        "excercises": [
+            {
+                "value": "Cardio 10’ (alterno 1’ corsa e 1’ cammino)"
+            }
+        ]
+    },
+    {
+        "title": "Circuito 3: 4 serie (rest.2’)",
+        "excercises": [
+            {
+                "value": "Bike 3 minuti"
+            },
+            {
+                "value": "Rope 40"
+            },
+            {
+                "value": "Side Plank 25+25"
+            },
+            {
+                "value": "Crunch gambe alzate 25"
+            }
+        ]
+    }
+]
+

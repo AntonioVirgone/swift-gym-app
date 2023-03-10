@@ -1,0 +1,69 @@
+[
+    {
+        "title": "Circuito 1:",
+        "excercises": [
+            {
+                "value": "Vogatore 10 minuti (<2.5)"
+            },
+            {
+                "value": "Piegamenti sulle braccia ",
+                "serie":3,
+                "ripetizioni": 15,
+                "riposo": 60
+            },
+            {
+                "value": "Chest Press ",
+                "serie":3,
+                "ripetizioni": 12,
+                "riposo": 60
+            },
+            {
+                "value": "Pulley ",
+                "serie":3,
+                "ripetizioni": 12,
+                "riposo": 60
+            },
+            {
+                "value": "Lat Machine ",
+                "serie":3,
+                "ripetizioni": 12,
+                "riposo": 60
+            },
+            {
+                "value": "Shoulder Press ",
+                "serie":3,
+                "ripetizioni": 12,
+                "riposo": 60
+            }
+        ]
+    },
+    {
+        "title": "Circuito 2",
+        "excercises": [
+            {
+                "value": "Cardio 10’ (alterno 1’ corsa e 1’ cammino)"
+            }
+        ]
+    },
+    {
+        "title": "Circuito 3: 4 serie (rest.2’)",
+        "excercises": [
+            {
+                "value": "Affondi in cammino 8"
+            },
+            {
+                "value": "Balzi su cubo 8"
+            },
+            {
+                "value": "Jumping jack 40"
+            },
+            {
+                "value": "Torsioni del busto 50"
+            },
+            {
+                "value": "Crunch gambe alzate 25"
+            }
+        ]
+    }
+]
+
