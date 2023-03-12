@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		F93C7A2E29B9BBFA006C393B /* SecondDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C7A2D29B9BBFA006C393B /* SecondDayView.swift */; };
 		F93C7A3029B9CCF8006C393B /* ThirdDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C7A2F29B9CCF8006C393B /* ThirdDayView.swift */; };
-		F93C7A6829BA81EF006C393B /* NavigationMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C7A6729BA81EF006C393B /* NavigationMenuView.swift */; };
 		F93C7A6B29BA8BA1006C393B /* scheda_a.json in Resources */ = {isa = PBXBuildFile; fileRef = F93C7A6A29BA8BA1006C393B /* scheda_a.json */; };
-		F93C7A6D29BA8EC2006C393B /* JsonDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C7A6C29BA8EC2006C393B /* JsonDecode.swift */; };
 		F93C7A6F29BB1063006C393B /* scheda_b.json in Resources */ = {isa = PBXBuildFile; fileRef = F93C7A6E29BB1063006C393B /* scheda_b.json */; };
 		F93C7A7129BB1631006C393B /* ExercisListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C7A7029BB1631006C393B /* ExercisListView.swift */; };
 		F93C7A7329BB17D5006C393B /* scheda_c.json in Resources */ = {isa = PBXBuildFile; fileRef = F93C7A7229BB17D5006C393B /* scheda_c.json */; };
 		F93C7A7529BB1EAE006C393B /* SchedaButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C7A7429BB1EAE006C393B /* SchedaButtonView.swift */; };
+		F93C7AA629BB755A006C393B /* NetworkPackage in Frameworks */ = {isa = PBXBuildFile; productRef = F93C7AA529BB755A006C393B /* NetworkPackage */; };
+		F93C7AA929BB77D0006C393B /* ColorPackage in Frameworks */ = {isa = PBXBuildFile; productRef = F93C7AA829BB77D0006C393B /* ColorPackage */; };
 		F94405DF29B7241C00D60DDA /* iGymApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94405DE29B7241C00D60DDA /* iGymApp.swift */; };
 		F94405E129B7241C00D60DDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94405E029B7241C00D60DDA /* ContentView.swift */; };
 		F94405E329B7241F00D60DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F94405E229B7241F00D60DDA /* Assets.xcassets */; };
@@ -24,7 +24,9 @@
 		F94405FA29B7242000D60DDA /* iGymUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94405F929B7242000D60DDA /* iGymUITests.swift */; };
 		F94405FC29B7242000D60DDA /* iGymUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94405FB29B7242000D60DDA /* iGymUITestsLaunchTests.swift */; };
 		F944060B29B7251B00D60DDA /* FirstDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944060A29B7251B00D60DDA /* FirstDayView.swift */; };
-		F944060D29B745A900D60DDA /* ColorRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944060C29B745A900D60DDA /* ColorRGB.swift */; };
+		F9DC3A5529BE40D000BB2AA3 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A5429BE40D000BB2AA3 /* DetailController.swift */; };
+		F9DC3A5829BE410400BB2AA3 /* Scheda.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A5729BE410400BB2AA3 /* Scheda.swift */; };
+		F9DC3A5A29BE411400BB2AA3 /* Esercizio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A5929BE411400BB2AA3 /* Esercizio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +49,7 @@
 /* Begin PBXFileReference section */
 		F93C7A2D29B9BBFA006C393B /* SecondDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDayView.swift; sourceTree = "<group>"; };
 		F93C7A2F29B9CCF8006C393B /* ThirdDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdDayView.swift; sourceTree = "<group>"; };
-		F93C7A6729BA81EF006C393B /* NavigationMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMenuView.swift; sourceTree = "<group>"; };
 		F93C7A6A29BA8BA1006C393B /* scheda_a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scheda_a.json; sourceTree = "<group>"; };
-		F93C7A6C29BA8EC2006C393B /* JsonDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecode.swift; sourceTree = "<group>"; };
 		F93C7A6E29BB1063006C393B /* scheda_b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scheda_b.json; sourceTree = "<group>"; };
 		F93C7A7029BB1631006C393B /* ExercisListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisListView.swift; sourceTree = "<group>"; };
 		F93C7A7229BB17D5006C393B /* scheda_c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scheda_c.json; sourceTree = "<group>"; };
@@ -65,7 +65,9 @@
 		F94405F929B7242000D60DDA /* iGymUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGymUITests.swift; sourceTree = "<group>"; };
 		F94405FB29B7242000D60DDA /* iGymUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGymUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F944060A29B7251B00D60DDA /* FirstDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDayView.swift; sourceTree = "<group>"; };
-		F944060C29B745A900D60DDA /* ColorRGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRGB.swift; sourceTree = "<group>"; };
+		F9DC3A5429BE40D000BB2AA3 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		F9DC3A5729BE410400BB2AA3 /* Scheda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheda.swift; sourceTree = "<group>"; };
+		F9DC3A5929BE411400BB2AA3 /* Esercizio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esercizio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F93C7AA629BB755A006C393B /* NetworkPackage in Frameworks */,
+				F93C7AA929BB77D0006C393B /* ColorPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,14 +130,14 @@
 		F94405DD29B7241C00D60DDA /* iGym */ = {
 			isa = PBXGroup;
 			children = (
+				F9DC3A5629BE40F800BB2AA3 /* model */,
+				F9DC3A5329BE40B200BB2AA3 /* controller */,
 				F93C7A6929BA8B69006C393B /* resource */,
 				F944060829B724F400D60DDA /* view */,
 				F94405DE29B7241C00D60DDA /* iGymApp.swift */,
 				F94405E029B7241C00D60DDA /* ContentView.swift */,
 				F94405E229B7241F00D60DDA /* Assets.xcassets */,
 				F94405E429B7241F00D60DDA /* Preview Content */,
-				F944060C29B745A900D60DDA /* ColorRGB.swift */,
-				F93C7A6729BA81EF006C393B /* NavigationMenuView.swift */,
 			);
 			path = iGym;
 			sourceTree = "<group>";
@@ -167,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				F944060929B7250B00D60DDA /* home */,
-				F93C7A6C29BA8EC2006C393B /* JsonDecode.swift */,
+				F9DC3A5B29BE416200BB2AA3 /* detail */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -175,13 +179,37 @@
 		F944060929B7250B00D60DDA /* home */ = {
 			isa = PBXGroup;
 			children = (
-				F93C7A7029BB1631006C393B /* ExercisListView.swift */,
 				F93C7A7429BB1EAE006C393B /* SchedaButtonView.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		F9DC3A5329BE40B200BB2AA3 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F9DC3A5429BE40D000BB2AA3 /* DetailController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		F9DC3A5629BE40F800BB2AA3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F9DC3A5729BE410400BB2AA3 /* Scheda.swift */,
+				F9DC3A5929BE411400BB2AA3 /* Esercizio.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F9DC3A5B29BE416200BB2AA3 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				F93C7A7029BB1631006C393B /* ExercisListView.swift */,
 				F944060A29B7251B00D60DDA /* FirstDayView.swift */,
 				F93C7A2D29B9BBFA006C393B /* SecondDayView.swift */,
 				F93C7A2F29B9CCF8006C393B /* ThirdDayView.swift */,
 			);
-			path = home;
+			path = detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +228,10 @@
 			dependencies = (
 			);
 			name = iGym;
+			packageProductDependencies = (
+				F93C7AA529BB755A006C393B /* NetworkPackage */,
+				F93C7AA829BB77D0006C393B /* ColorPackage */,
+			);
 			productName = iGym;
 			productReference = F94405DB29B7241C00D60DDA /* iGym.app */;
 			productType = "com.apple.product-type.application";
@@ -272,6 +304,10 @@
 				Base,
 			);
 			mainGroup = F94405D229B7241C00D60DDA;
+			packageReferences = (
+				F93C7AA429BB755A006C393B /* XCRemoteSwiftPackageReference "NetworkPackage" */,
+				F93C7AA729BB77D0006C393B /* XCRemoteSwiftPackageReference "ColorPackage" */,
+			);
 			productRefGroup = F94405DC29B7241C00D60DDA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -317,14 +353,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DC3A5529BE40D000BB2AA3 /* DetailController.swift in Sources */,
 				F944060B29B7251B00D60DDA /* FirstDayView.swift in Sources */,
-				F93C7A6D29BA8EC2006C393B /* JsonDecode.swift in Sources */,
 				F94405E129B7241C00D60DDA /* ContentView.swift in Sources */,
-				F93C7A6829BA81EF006C393B /* NavigationMenuView.swift in Sources */,
+				F9DC3A5A29BE411400BB2AA3 /* Esercizio.swift in Sources */,
 				F93C7A7129BB1631006C393B /* ExercisListView.swift in Sources */,
 				F93C7A2E29B9BBFA006C393B /* SecondDayView.swift in Sources */,
+				F9DC3A5829BE410400BB2AA3 /* Scheda.swift in Sources */,
 				F94405DF29B7241C00D60DDA /* iGymApp.swift in Sources */,
-				F944060D29B745A900D60DDA /* ColorRGB.swift in Sources */,
 				F93C7A7529BB1EAE006C393B /* SchedaButtonView.swift in Sources */,
 				F93C7A3029B9CCF8006C393B /* ThirdDayView.swift in Sources */,
 			);
@@ -647,6 +683,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F93C7AA429BB755A006C393B /* XCRemoteSwiftPackageReference "NetworkPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AntonioVirgone/NetworkPackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F93C7AA729BB77D0006C393B /* XCRemoteSwiftPackageReference "ColorPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AntonioVirgone/ColorPackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F93C7AA529BB755A006C393B /* NetworkPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F93C7AA429BB755A006C393B /* XCRemoteSwiftPackageReference "NetworkPackage" */;
+			productName = NetworkPackage;
+		};
+		F93C7AA829BB77D0006C393B /* ColorPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F93C7AA729BB77D0006C393B /* XCRemoteSwiftPackageReference "ColorPackage" */;
+			productName = ColorPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F94405D329B7241C00D60DDA /* Project object */;
 }

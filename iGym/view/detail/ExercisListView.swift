@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
+import ColorPackage
 
 struct ExercisListView: View {
     let scheda: [Scheda]
-    
     @State private var singleSelection: UUID?
 
     var body: some View {
@@ -34,18 +34,4 @@ struct ExercisListView_Previews: PreviewProvider {
     static var previews: some View {
         ExercisListView(scheda: [Scheda(title: "test", excercises: [Esercizio(value: "test", serie: nil, ripetizioni: nil, riposo: nil)])])
     }
-}
-
-struct Scheda: Identifiable, Hashable, Codable {
-    let title: String
-    let excercises: [Esercizio]
-    let id = UUID()
-}
-
-struct Esercizio: Identifiable, Hashable, Codable {
-    let value: String
-    let serie: Int?
-    let ripetizioni: Int?
-    let riposo: Int?
-    let id = UUID()
 }

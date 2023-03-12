@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct FirstDayView: View {
-    private let schedaA: [Scheda] = loadFromFile("scheda_a.json")
-    
     @State private var singleSelection: UUID?
     
+    let scheda = getData(filename: "scheda_a.json")
+    
     var body: some View {
-        ExercisListView(scheda: schedaA)
+        ExercisListView(scheda: scheda)
     }
 }
 
@@ -21,8 +21,4 @@ struct FirstDayView_Previews: PreviewProvider {
     static var previews: some View {
         FirstDayView()
     }
-}
-
-func detail(a: Int, b: Int, c: Int) -> String {
-    return "\(a) srerie da \(b) ripetizioni con riposo di \(c) secondi"
 }
