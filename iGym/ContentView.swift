@@ -10,16 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(alignment: .center) {
-            NavigationView {
-                VStack {
-                    Image("gym-icon")
-                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 80, trailing: 0))
-                    SchedaButtonView(name: "Giorno A", destination: FirstDayView())
-                    SchedaButtonView(name: "Giorno B", destination: SecondDayView())
-                    SchedaButtonView(name: "Giorno C", destination: ThirdDayView())
-                }
+            VStack {
+                Image("gym-icon")
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 80, trailing: 0))
+                SchedaButtonView(name: "Giorno A", destination: FirstDayView())
+                SchedaButtonView(name: "Giorno B", destination: SecondDayView())
+                SchedaButtonView(name: "Giorno C", destination: ThirdDayView())
             }
-            .navigationSplitViewStyle(.balanced)
         }
     }
 }

@@ -11,7 +11,10 @@ import SwiftUI
 struct iGymApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
+            .navigationSplitViewStyle(.balanced)
         }
     }
 }
