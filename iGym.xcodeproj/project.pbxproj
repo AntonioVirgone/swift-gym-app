@@ -32,8 +32,8 @@
 		F9DC3A6229BE576000BB2AA3 /* RiposoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A6129BE576000BB2AA3 /* RiposoButtonView.swift */; };
 		F9DC3A6429BE64FC00BB2AA3 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A6329BE64FC00BB2AA3 /* Training.swift */; };
 		F9DC3A6629BE65E800BB2AA3 /* Ripetizione.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A6529BE65E800BB2AA3 /* Ripetizione.swift */; };
-		F9DC3A6929BF06A800BB2AA3 /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A6729BF06A700BB2AA3 /* TestModel.xcdatamodeld */; };
 		F9DC3A6C29BF07E100BB2AA3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A6B29BF07E100BB2AA3 /* DataManager.swift */; };
+		F9DC3A7129BF631000BB2AA3 /* GymModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A6F29BF631000BB2AA3 /* GymModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +80,8 @@
 		F9DC3A6129BE576000BB2AA3 /* RiposoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiposoButtonView.swift; sourceTree = "<group>"; };
 		F9DC3A6329BE64FC00BB2AA3 /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
 		F9DC3A6529BE65E800BB2AA3 /* Ripetizione.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ripetizione.swift; sourceTree = "<group>"; };
-		F9DC3A6829BF06A800BB2AA3 /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
 		F9DC3A6B29BF07E100BB2AA3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F9DC3A7029BF631000BB2AA3 /* GymModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,7 +244,7 @@
 		F9DC3A6A29BF06AF00BB2AA3 /* data_model */ = {
 			isa = PBXGroup;
 			children = (
-				F9DC3A6729BF06A700BB2AA3 /* TestModel.xcdatamodeld */,
+				F9DC3A6F29BF631000BB2AA3 /* GymModel.xcdatamodeld */,
 			);
 			path = data_model;
 			sourceTree = "<group>";
@@ -405,8 +405,8 @@
 				F93C7A3029B9CCF8006C393B /* ThirdDayView.swift in Sources */,
 				F9DC3A6629BE65E800BB2AA3 /* Ripetizione.swift in Sources */,
 				F9DC3A6029BE492B00BB2AA3 /* CounterView.swift in Sources */,
+				F9DC3A7129BF631000BB2AA3 /* GymModel.xcdatamodeld in Sources */,
 				F9DC3A6229BE576000BB2AA3 /* RiposoButtonView.swift in Sources */,
-				F9DC3A6929BF06A800BB2AA3 /* TestModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,13 +761,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		F9DC3A6729BF06A700BB2AA3 /* TestModel.xcdatamodeld */ = {
+		F9DC3A6F29BF631000BB2AA3 /* GymModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F9DC3A6829BF06A800BB2AA3 /* TestModel.xcdatamodel */,
+				F9DC3A7029BF631000BB2AA3 /* GymModel.xcdatamodel */,
 			);
-			currentVersion = F9DC3A6829BF06A800BB2AA3 /* TestModel.xcdatamodel */;
-			path = TestModel.xcdatamodeld;
+			currentVersion = F9DC3A7029BF631000BB2AA3 /* GymModel.xcdatamodel */;
+			path = GymModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

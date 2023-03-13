@@ -8,7 +8,8 @@
 import UIKit
 import SwiftUI
 
-class Ripetizione: NSObject, ObservableObject, Identifiable {
+class Ripetizione: NSObject, ObservableObject, Identifiable, Codable {
+    let uuid = UUID()
     let numero: Int
     let peso: Int
     
