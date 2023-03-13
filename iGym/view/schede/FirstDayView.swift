@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct FirstDayView: View {
-    @State private var singleSelection: UUID?
-    
     let scheda = getData(filename: "scheda_a.json")
     
     var body: some View {
