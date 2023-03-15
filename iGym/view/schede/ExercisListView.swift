@@ -28,7 +28,7 @@ struct ExercisListView: View {
     
     struct ExercisListView_Previews: PreviewProvider {
         static var previews: some View {
-            ExercisListView(scheda: [Scheda(title: "test", excercises: [Esercizio(value: "test", serie: nil, ripetizioni: nil, riposo: nil)])])
+            ExercisListView(scheda: [Scheda(title: "test", excercises: [Esercizio(code: "value00001", value: "test", serie: nil, ripetizioni: nil, riposo: nil)])])
         }
     }
 }

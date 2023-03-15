@@ -12,6 +12,8 @@ struct DetailView: View {
     @State var number: Int16 = 0
     @State var weigth: Int16 = 0
 
+    @State private var showingAddView = false
+
     @Environment(\.managedObjectContext) var manageObjectContext
     @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var repetition: FetchedResults<Repetition>
     
@@ -27,41 +29,51 @@ struct DetailView: View {
             }
             RiposoButtonView(riposo: esercizio.riposo ?? 60)
             List {
-                Text("1º ripetizione: 100kg")
-                Text("2º ripetizione: 100kg")
-                Text("3º ripetizione: 100kg")
-            }
-            
-            List {
                 ForEach(repetition) { repetition in
-                    NavigationLink(destination: EditRepetitionView(repetition: repetition)) {
-                        HStack {
-                            VStack(alignment: .leading, spacing: 6) {
-                                Text("\(repetition.number)").bold()
-                                
-                                Text("\(Int(repetition.weigth)) ") + Text("calories").foregroundColor(.red)
+                    if esercizio.code == repetition.trainingCode {
+                        NavigationLink(destination: EditRepetitionView(code: esercizio.code ?? "", repetition: repetition)) {
+                            HStack {
+                                VStack(alignment: .leading, spacing: 6) {
+                                    Text("\(Int(repetition.number)) ripetioni").bold()
+                                    Text("\(Int(repetition.weigth)) ") + Text("kg").foregroundColor(.red)
+                                    Text("\(repetition.date!.formatted())").font(.custom("Poppins", size: 12))
+                                }
+                                Spacer()
                             }
-                            Spacer()
                         }
                     }
                 }
-                .onDelete(perform: deleteFood)
+                .onDelete(perform: deleteRepetition)
             }
             .listStyle(.plain)
         }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    showingAddView.toggle()
+                } label: {
+                    Label("Add Food", systemImage: "plus.circle")
+                }
+            }
+        }
+        .sheet(isPresented: $showingAddView) {
+            AddRepetitionView(code: esercizio.code ?? "")
+        }
+        
     }
     
-    private func deleteFood(offsets: IndexSet) {
+    private func deleteRepetition(offsets: IndexSet) {
         withAnimation {
             offsets.map { repetition[$0] }.forEach(manageObjectContext.delete)
             
             DataController().save(context: manageObjectContext)
         }
     }
+        
     
     struct DetailView_Previews: PreviewProvider {
         static var previews: some View {
-            DetailView(esercizio: Esercizio(value: "test", serie: 1, ripetizioni: 1, riposo: 10))
+            DetailView(esercizio: Esercizio(code: "value00001", value: "test", serie: 1, ripetizioni: 1, riposo: 10))
         }
     }
 }

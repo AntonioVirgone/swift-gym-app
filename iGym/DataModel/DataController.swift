@@ -28,21 +28,23 @@ class DataController: ObservableObject {
         }
     }
     
-    func addRepetition(number: Double, weigth: Double, context: NSManagedObjectContext) {
+    func addRepetition(number: Double, weigth: Double, trainingCode: String, context: NSManagedObjectContext) {
         let repetition = Repetition(context: context)
         repetition.id = UUID()
         repetition.date = Date()
         repetition.number = number
         repetition.weigth = weigth
+        repetition.trainingCode = trainingCode
         
         save(context: context)
     }
     
-    func editRepetition(repetition: Repetition, number: Double, weigth: Double, context: NSManagedObjectContext) {
+    func editRepetition(repetition: Repetition, number: Double, weigth: Double, trainingCode: String, context: NSManagedObjectContext) {
         repetition.date = Date()
         repetition.number = number
         repetition.weigth = weigth
-        
+        repetition.trainingCode = trainingCode
+
         save(context: context)
     }
 }

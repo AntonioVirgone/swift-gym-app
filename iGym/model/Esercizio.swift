@@ -8,6 +8,7 @@
 import Foundation
 
 struct Esercizio: Identifiable, Hashable, Codable {
+    let code: String?
     let value: String
     let serie: Int?
     let ripetizioni: Int?
