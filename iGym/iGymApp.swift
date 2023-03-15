@@ -9,15 +9,11 @@ import SwiftUI
 
 @main
 struct iGymApp: App {
-    let persistenceController = DataManager.shared
+    @StateObject private var dataController = DataController()
 
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
-                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            }
-            .navigationSplitViewStyle(.balanced)
+            ContentView().environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

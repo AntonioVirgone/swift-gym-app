@@ -32,8 +32,9 @@
 		F9DC3A6229BE576000BB2AA3 /* RiposoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A6129BE576000BB2AA3 /* RiposoButtonView.swift */; };
 		F9DC3A6429BE64FC00BB2AA3 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A6329BE64FC00BB2AA3 /* Training.swift */; };
 		F9DC3A6629BE65E800BB2AA3 /* Ripetizione.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A6529BE65E800BB2AA3 /* Ripetizione.swift */; };
-		F9DC3A6C29BF07E100BB2AA3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A6B29BF07E100BB2AA3 /* DataManager.swift */; };
 		F9DC3A7129BF631000BB2AA3 /* GymModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A6F29BF631000BB2AA3 /* GymModel.xcdatamodeld */; };
+		F9DC3A9D29C1F3E000BB2AA3 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A9C29C1F3E000BB2AA3 /* DataController.swift */; };
+		F9DC3A9F29C1F58700BB2AA3 /* EditRepetitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3A9E29C1F58700BB2AA3 /* EditRepetitionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +81,9 @@
 		F9DC3A6129BE576000BB2AA3 /* RiposoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiposoButtonView.swift; sourceTree = "<group>"; };
 		F9DC3A6329BE64FC00BB2AA3 /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
 		F9DC3A6529BE65E800BB2AA3 /* Ripetizione.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ripetizione.swift; sourceTree = "<group>"; };
-		F9DC3A6B29BF07E100BB2AA3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		F9DC3A7029BF631000BB2AA3 /* GymModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymModel.xcdatamodel; sourceTree = "<group>"; };
+		F9DC3A9C29C1F3E000BB2AA3 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		F9DC3A9E29C1F58700BB2AA3 /* EditRepetitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRepetitionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,13 +146,12 @@
 		F94405DD29B7241C00D60DDA /* iGym */ = {
 			isa = PBXGroup;
 			children = (
-				F9DC3A6A29BF06AF00BB2AA3 /* data_model */,
+				F9DC3A6A29BF06AF00BB2AA3 /* DataModel */,
 				F9DC3A5629BE40F800BB2AA3 /* model */,
 				F9DC3A5329BE40B200BB2AA3 /* controller */,
 				F93C7A6929BA8B69006C393B /* resource */,
 				F944060829B724F400D60DDA /* view */,
 				F94405DE29B7241C00D60DDA /* iGymApp.swift */,
-				F94405E029B7241C00D60DDA /* ContentView.swift */,
 				F94405E229B7241F00D60DDA /* Assets.xcassets */,
 				F94405E429B7241F00D60DDA /* Preview Content */,
 			);
@@ -185,6 +186,7 @@
 		F944060829B724F400D60DDA /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F94405E029B7241C00D60DDA /* ContentView.swift */,
 				F944060929B7250B00D60DDA /* home */,
 				F9DC3A5B29BE416200BB2AA3 /* schede */,
 				F9DC3A5C29BE440200BB2AA3 /* detail */,
@@ -204,7 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				F9DC3A5429BE40D000BB2AA3 /* DetailController.swift */,
-				F9DC3A6B29BF07E100BB2AA3 /* DataManager.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -237,16 +238,18 @@
 				F9DC3A5D29BE441C00BB2AA3 /* DetailView.swift */,
 				F9DC3A5F29BE492B00BB2AA3 /* CounterView.swift */,
 				F9DC3A6129BE576000BB2AA3 /* RiposoButtonView.swift */,
+				F9DC3A9E29C1F58700BB2AA3 /* EditRepetitionView.swift */,
 			);
 			path = detail;
 			sourceTree = "<group>";
 		};
-		F9DC3A6A29BF06AF00BB2AA3 /* data_model */ = {
+		F9DC3A6A29BF06AF00BB2AA3 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
 				F9DC3A6F29BF631000BB2AA3 /* GymModel.xcdatamodeld */,
+				F9DC3A9C29C1F3E000BB2AA3 /* DataController.swift */,
 			);
-			path = data_model;
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,12 +400,13 @@
 				F93C7A7129BB1631006C393B /* ExercisListView.swift in Sources */,
 				F9DC3A5E29BE441C00BB2AA3 /* DetailView.swift in Sources */,
 				F93C7A2E29B9BBFA006C393B /* SecondDayView.swift in Sources */,
+				F9DC3A9F29C1F58700BB2AA3 /* EditRepetitionView.swift in Sources */,
 				F9DC3A6429BE64FC00BB2AA3 /* Training.swift in Sources */,
 				F9DC3A5829BE410400BB2AA3 /* Scheda.swift in Sources */,
-				F9DC3A6C29BF07E100BB2AA3 /* DataManager.swift in Sources */,
 				F94405DF29B7241C00D60DDA /* iGymApp.swift in Sources */,
 				F93C7A7529BB1EAE006C393B /* SchedaButtonView.swift in Sources */,
 				F93C7A3029B9CCF8006C393B /* ThirdDayView.swift in Sources */,
+				F9DC3A9D29C1F3E000BB2AA3 /* DataController.swift in Sources */,
 				F9DC3A6629BE65E800BB2AA3 /* Ripetizione.swift in Sources */,
 				F9DC3A6029BE492B00BB2AA3 /* CounterView.swift in Sources */,
 				F9DC3A7129BF631000BB2AA3 /* GymModel.xcdatamodeld in Sources */,

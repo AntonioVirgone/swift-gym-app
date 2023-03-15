@@ -11,11 +11,9 @@ import CoreData
 struct DetailView: View {
     @State var number: Int16 = 0
     @State var weigth: Int16 = 0
-    
-    @Environment(\.managedObjectContext) private var viewContext
-    
-    @FetchRequest(entity: Repetition.entity(), sortDescriptors: [])
-    private var products: FetchedResults<Repetition>
+
+    @Environment(\.managedObjectContext) var manageObjectContext
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var repetition: FetchedResults<Repetition>
     
     let esercizio: Esercizio
     
@@ -35,51 +33,29 @@ struct DetailView: View {
             }
             
             List {
-                ForEach(products) { product in
-                    HStack {
-                        Text("\(product.number)")
-                        Spacer()
-                        Text("\(product.weigth)")
+                ForEach(repetition) { repetition in
+                    NavigationLink(destination: EditRepetitionView(repetition: repetition)) {
+                        HStack {
+                            VStack(alignment: .leading, spacing: 6) {
+                                Text("\(repetition.number)").bold()
+                                
+                                Text("\(Int(repetition.weigth)) ") + Text("calories").foregroundColor(.red)
+                            }
+                            Spacer()
+                        }
                     }
                 }
+                .onDelete(perform: deleteFood)
             }
-            .navigationTitle("Product Database")
-            
-            VStack {
-                Spacer()
-                Button("Add") {
-                    addProduct()
-                }
-                Spacer()
-                Button("Clear") {
-                    number = 0
-                    weigth = 0
-                }
-            }
-            Button(action: {
-                
-            }) {
-                Text("Cliccami")
-            }
+            .listStyle(.plain)
         }
     }
     
-    private func addProduct() {
+    private func deleteFood(offsets: IndexSet) {
         withAnimation {
-            let product = Repetition(context: viewContext)
-            product.number = number
-            product.weigth = weigth
+            offsets.map { repetition[$0] }.forEach(manageObjectContext.delete)
             
-            saveContext()
-        }
-    }
-    
-    private func saveContext() {
-        do {
-            try viewContext.save()
-        } catch {
-            let error = error as NSError
-            fatalError("An error occured: \(error)")
+            DataController().save(context: manageObjectContext)
         }
     }
     
