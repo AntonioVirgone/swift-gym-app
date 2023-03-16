@@ -22,8 +22,8 @@ struct DetailView: View {
     var body: some View {
         VStack(spacing: 50) {
             if (esercizio.serie != nil) {
-                let details = detail(a: esercizio.serie!, b: esercizio.ripetizioni!, c: esercizio.riposo!)
-                Text("\(esercizio.value) \(esercizio.serie ?? 0) srerie da \(esercizio.ripetizioni ?? 0) ripetizioni").font(.system(size: 22)).fontWeight(.bold)
+                Text("\(esercizio.value)").font(.system(size: 22)).fontWeight(.bold)
+                Text("\(esercizio.serie ?? 0) srerie da \(esercizio.ripetizioni ?? 0) ripetizioni").font(.system(size: 16)).fontWeight(.light)
             } else {
                 Text("\(esercizio.value)").font(.system(size: 22)).fontWeight(.bold)
             }
@@ -52,7 +52,7 @@ struct DetailView: View {
                 Button {
                     showingAddView.toggle()
                 } label: {
-                    Label("Add Food", systemImage: "plus.circle")
+                    Label("Aggiungi ripetizioni", systemImage: "plus.circle")
                 }
             }
         }
