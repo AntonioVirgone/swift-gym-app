@@ -11,16 +11,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            VStack(alignment: .center) {
-                VStack {
-                    Image("gym-icon")
-                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 80, trailing: 0))
-                    SchedaButtonView(name: "Giorno A", destination: FirstDayView())
-                    SchedaButtonView(name: "Giorno B", destination: SecondDayView())
-                    SchedaButtonView(name: "Giorno C", destination: ThirdDayView())
+            ZStack {
+                BackgroundAppView()
+                VStack(alignment: .center) {
+                    VStack {
+                        Image("app-icon")
+                            .cornerRadius(60)
+                            .padding(EdgeInsets(top: 0, leading: 0, bottom: 80, trailing: 0))
+                        SchedaButtonView(name: "Giorno A", destination: FirstDayView())
+                        SchedaButtonView(name: "Giorno B", destination: SecondDayView())
+                        SchedaButtonView(name: "Giorno C", destination: ThirdDayView())
+                    }
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
     
     struct ContentView_Previews: PreviewProvider {

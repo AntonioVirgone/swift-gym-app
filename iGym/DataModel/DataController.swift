@@ -47,4 +47,22 @@ class DataController: ObservableObject {
 
         save(context: context)
     }
+    
+    func addUser(username: String, password: String, avatar: String, context: NSManagedObjectContext) {
+        let user = User(context: context)
+        user.id = UUID()
+        user.username = username
+        user.password = password
+        user.avatar = avatar
+        
+        save(context: context)
+    }
+    
+    func editUser(user: User, username: String, password: String, avatar: String, context: NSManagedObjectContext) {
+        user.username = username
+        user.password = password
+        user.avatar = avatar
+
+        save(context: context)
+    }
 }

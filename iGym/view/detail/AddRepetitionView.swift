@@ -20,18 +20,33 @@ struct AddRepetitionView: View {
         Form {
             Section {
                 Text("Esercizio \(code)")
-                TextField("Ripetizioni", value: $number, formatter: NumberFormatter())
+                HStack {
+                    Text("Ripetizioni: ")
+                    TextField("Ripetizioni", value: $number, formatter: NumberFormatter())
+                }
                 VStack {
                     Text("Peso: \(Int(weigth))")
                     Slider(value: $weigth, in: 0...150, step: 5)
                 }
                 .padding()
-                
+                .listRowSeparator(.hidden)
                 HStack {
                     Spacer()
-                    Button("Submit") {
+                    Button {
                         DataController().addRepetition(number: number, weigth: weigth, trainingCode: code, context: manageObjectContext)
                         dismiss()
+                    } label: {
+                        Text("Save").foregroundColor(.green)
+                    }
+                    Spacer()
+                }
+                .listRowSeparator(.hidden)
+                HStack {
+                    Spacer()
+                    Button {
+                        dismiss()
+                    } label: {
+                        Text("Close").foregroundColor(.red)
                     }
                     Spacer()
                 }

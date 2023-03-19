@@ -13,7 +13,7 @@ struct iGymApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView().environment(\.managedObjectContext, dataController.container.viewContext)
+            SplashScreenView().environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }
