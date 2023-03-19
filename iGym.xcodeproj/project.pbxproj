@@ -39,6 +39,7 @@
 		F9DC3AAB29C6494B00BB2AA3 /* BackgroundAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3AAA29C6494B00BB2AA3 /* BackgroundAppView.swift */; };
 		F9DC3AAD29C6EAE600BB2AA3 /* TestNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3AAC29C6EAE600BB2AA3 /* TestNavigationView.swift */; };
 		F9DC3AB029C6F05600BB2AA3 /* TestNavigationView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3AAF29C6F05600BB2AA3 /* TestNavigationView2.swift */; };
+		F9DC3AB329C6F96300BB2AA3 /* CreateUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3AB229C6F96300BB2AA3 /* CreateUserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		F9DC3AAA29C6494B00BB2AA3 /* BackgroundAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppView.swift; sourceTree = "<group>"; };
 		F9DC3AAC29C6EAE600BB2AA3 /* TestNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigationView.swift; sourceTree = "<group>"; };
 		F9DC3AAF29C6F05600BB2AA3 /* TestNavigationView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigationView2.swift; sourceTree = "<group>"; };
+		F9DC3AB229C6F96300BB2AA3 /* CreateUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 		F944060829B724F400D60DDA /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F9DC3AB129C6F94E00BB2AA3 /* admin */,
 				F9DC3AAE29C6F04200BB2AA3 /* test */,
 				F9DC3AA429C63B3300BB2AA3 /* SplashScreenView.swift */,
 				F94405E029B7241C00D60DDA /* ContentView.swift */,
@@ -286,6 +289,14 @@
 				F9DC3AAF29C6F05600BB2AA3 /* TestNavigationView2.swift */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		F9DC3AB129C6F94E00BB2AA3 /* admin */ = {
+			isa = PBXGroup;
+			children = (
+				F9DC3AB229C6F96300BB2AA3 /* CreateUserView.swift */,
+			);
+			path = admin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,6 +452,7 @@
 				F93C7A2E29B9BBFA006C393B /* SecondDayView.swift in Sources */,
 				F9DC3AA129C1F96800BB2AA3 /* AddRepetitionView.swift in Sources */,
 				F9DC3A9F29C1F58700BB2AA3 /* EditRepetitionView.swift in Sources */,
+				F9DC3AB329C6F96300BB2AA3 /* CreateUserView.swift in Sources */,
 				F9DC3A5829BE410400BB2AA3 /* Scheda.swift in Sources */,
 				F94405DF29B7241C00D60DDA /* iGymApp.swift in Sources */,
 				F9DC3AA529C63B3300BB2AA3 /* SplashScreenView.swift in Sources */,

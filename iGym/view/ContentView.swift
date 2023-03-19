@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -26,6 +28,16 @@ struct ContentView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    self.presentationMode.wrappedValue.dismiss()
+                } label: {
+                    Label("Logout", systemImage: "eject.circle")
+                        .foregroundColor(.black)
+                }
+            }
+        }
     }
     
     struct ContentView_Previews: PreviewProvider {

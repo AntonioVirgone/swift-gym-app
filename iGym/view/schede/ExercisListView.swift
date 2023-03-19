@@ -18,12 +18,23 @@ struct ExercisListView: View {
                 Section(header: Text("\(scheda.title)")) {
                     ForEach(scheda.excercises) { esercizio in
                         NavigationLink(destination: DetailView(esercizio: esercizio)) {
-                            Text("\(esercizio.value)").font(.system(size: 12)).fontWeight(.bold)
+                            Text("\(esercizio.value)")
+                                .frame(maxWidth: .infinity, alignment: .center)
+                                .foregroundColor(.black)
+                                .font(.system(size: 14))
+                                .fontWeight(.bold)
                         }
                     }
+                    .listRowSeparator(.hidden)
                 }
+                .foregroundColor(.white)
+                .font(.system(size: 16))
+                .fontWeight(.bold)
+
             }
         }
+        .background(BackgroundAppView().paleteGreen1.ignoresSafeArea())
+        .scrollContentBackground(.hidden)
     }
     
     struct ExercisListView_Previews: PreviewProvider {

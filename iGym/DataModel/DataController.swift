@@ -53,7 +53,6 @@ class DataController: ObservableObject {
         user.id = UUID()
         user.username = username
         user.password = password
-        user.avatar = avatar
         
         save(context: context)
     }
@@ -61,7 +60,6 @@ class DataController: ObservableObject {
     func editUser(user: User, username: String, password: String, avatar: String, context: NSManagedObjectContext) {
         user.username = username
         user.password = password
-        user.avatar = avatar
 
         save(context: context)
     }

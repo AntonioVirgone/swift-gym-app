@@ -13,7 +13,8 @@ struct LoginView: View {
     @State private var wrongUsername = 0
     @State private var wrongPassword = 0
     @State private var showingLoginScreen = false
-    
+    @State private var isAdmin = false
+
     var body: some View {
         NavigationStack {
             ZStack {
@@ -38,33 +39,48 @@ struct LoginView: View {
                     Button("Login") {
                         authenticateUser(username: username, password: password)
                     }
+                    .fontWeight(.bold)
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
-                    .background(.black)
+                    .background(BackgroundAppView().paleteGreen3)
                     .cornerRadius(10)
                     .navigationDestination(
                         isPresented: $showingLoginScreen) {
-                            ContentView()
+                            if (isAdmin) {
+                                CreateUserView()
+                            } else {
+                                ContentView()
+                            }
                         }
                 }
             }
         }
         .navigationBarHidden(true)
-        
     }
     
     func authenticateUser(username: String, password: String) {
-        if username.lowercased() == "a" {
+        if username.lowercased() == "admin" {
             wrongUsername = 0
-            if password.lowercased() == "a" {
+            if password.lowercased() == "test" {
                 wrongPassword = 0
                 showingLoginScreen = true
-            } else {
+                isAdmin = true
+            }
+            /*
+             else {
                 wrongPassword = 2
             }
-        } else {
+             */
+        }
+        else {
+            showingLoginScreen = true
+            isAdmin = false
+        }
+        /*
+        else {
             wrongUsername = 2
         }
+         */
     }
 }
 

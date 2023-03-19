@@ -47,6 +47,7 @@ struct DetailView: View {
             }
             .listStyle(.plain)
         }
+        .background(BackgroundAppView().paleteGreen1)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
@@ -69,7 +70,6 @@ struct DetailView: View {
             DataController().save(context: manageObjectContext)
         }
     }
-        
     
     struct DetailView_Previews: PreviewProvider {
         static var previews: some View {

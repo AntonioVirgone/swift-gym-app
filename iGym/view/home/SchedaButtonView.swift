@@ -16,11 +16,10 @@ struct SchedaButtonView<T: View>: View {
         NavigationLink(name) {
             destination
         }
-        .frame(width: 250, height: 30)
-        .padding()
-        .background(LinearGradient(gradient: Gradient(colors: [ColorPackage().getColorFromRGB(r: 70, g: 70, b: 70), ColorPackage().getColorFromRGB(r: 0, g: 0, b: 0)]), startPoint: .top, endPoint: .bottom))
+        .fontWeight(.bold)
         .foregroundColor(.white)
-        .font(.headline)
+        .frame(width: 300, height: 50)
+        .background(BackgroundAppView().paleteGreen3)
         .cornerRadius(10)
     }
 }
