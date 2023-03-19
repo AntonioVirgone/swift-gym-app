@@ -38,6 +38,7 @@
 		F9DC3AA829C6409500BB2AA3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3AA729C6409500BB2AA3 /* LoginView.swift */; };
 		F9DC3AAB29C6494B00BB2AA3 /* BackgroundAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3AAA29C6494B00BB2AA3 /* BackgroundAppView.swift */; };
 		F9DC3AAD29C6EAE600BB2AA3 /* TestNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3AAC29C6EAE600BB2AA3 /* TestNavigationView.swift */; };
+		F9DC3AB029C6F05600BB2AA3 /* TestNavigationView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC3AAF29C6F05600BB2AA3 /* TestNavigationView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		F9DC3AA729C6409500BB2AA3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F9DC3AAA29C6494B00BB2AA3 /* BackgroundAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppView.swift; sourceTree = "<group>"; };
 		F9DC3AAC29C6EAE600BB2AA3 /* TestNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigationView.swift; sourceTree = "<group>"; };
+		F9DC3AAF29C6F05600BB2AA3 /* TestNavigationView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigationView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,13 +195,13 @@
 		F944060829B724F400D60DDA /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F9DC3AAE29C6F04200BB2AA3 /* test */,
 				F9DC3AA429C63B3300BB2AA3 /* SplashScreenView.swift */,
 				F94405E029B7241C00D60DDA /* ContentView.swift */,
 				F9DC3AA629C6406D00BB2AA3 /* login */,
 				F944060929B7250B00D60DDA /* home */,
 				F9DC3A5B29BE416200BB2AA3 /* schede */,
 				F9DC3A5C29BE440200BB2AA3 /* detail */,
-				F9DC3AAC29C6EAE600BB2AA3 /* TestNavigationView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -275,6 +277,15 @@
 				F9DC3AAA29C6494B00BB2AA3 /* BackgroundAppView.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		F9DC3AAE29C6F04200BB2AA3 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				F9DC3AAC29C6EAE600BB2AA3 /* TestNavigationView.swift */,
+				F9DC3AAF29C6F05600BB2AA3 /* TestNavigationView2.swift */,
+			);
+			path = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9DC3A5529BE40D000BB2AA3 /* DetailController.swift in Sources */,
+				F9DC3AB029C6F05600BB2AA3 /* TestNavigationView2.swift in Sources */,
 				F944060B29B7251B00D60DDA /* FirstDayView.swift in Sources */,
 				F9DC3AAD29C6EAE600BB2AA3 /* TestNavigationView.swift in Sources */,
 				F9DC3AAB29C6494B00BB2AA3 /* BackgroundAppView.swift in Sources */,

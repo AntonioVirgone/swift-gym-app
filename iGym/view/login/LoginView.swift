@@ -15,7 +15,7 @@ struct LoginView: View {
     @State private var showingLoginScreen = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 BackgroundAppView()
                 VStack {
@@ -42,19 +42,21 @@ struct LoginView: View {
                     .frame(width: 300, height: 50)
                     .background(.black)
                     .cornerRadius(10)
-                    
-                    NavigationLink(destination: Text("You are logged in @\(username)"), isActive: $showingLoginScreen) {
-                        EmptyView()
-                    }
+                    .navigationDestination(
+                        isPresented: $showingLoginScreen) {
+                            ContentView()
+                        }
                 }
             }
-        }.navigationBarHidden(true)
+        }
+        .navigationBarHidden(true)
+        
     }
     
     func authenticateUser(username: String, password: String) {
-        if username.lowercased() == "mario2021" {
+        if username.lowercased() == "a" {
             wrongUsername = 0
-            if password.lowercased() == "abc123" {
+            if password.lowercased() == "a" {
                 wrongPassword = 0
                 showingLoginScreen = true
             } else {
