@@ -14,6 +14,7 @@ struct LoginView: View {
     @State private var wrongPassword = 0
     @State private var showingLoginScreen = false
     @State private var isAdmin = false
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.username, order: .reverse)]) var user: FetchedResults<User>
 
     var body: some View {
         NavigationStack {
@@ -65,22 +66,29 @@ struct LoginView: View {
                 wrongPassword = 0
                 showingLoginScreen = true
                 isAdmin = true
+                
+                return
             }
-            /*
-             else {
-                wrongPassword = 2
+        }
+        
+        for user in user {
+            if user.username?.lowercased() == username.lowercased() {
+                if user.password?.lowercased() == password.lowercased() {
+                    wrongPassword = 0
+                    showingLoginScreen = true
+                    if user.admin {
+                        isAdmin = true
+                    } else {
+                        isAdmin = false
+                        setUser(user: UserModel(username: user.username!, avatar: user.avatar!))
+                    }
+                } else {
+                    wrongPassword = 2
+                }
+            } else {
+                wrongUsername = 2
             }
-             */
         }
-        else {
-            showingLoginScreen = true
-            isAdmin = false
-        }
-        /*
-        else {
-            wrongUsername = 2
-        }
-         */
     }
 }
 

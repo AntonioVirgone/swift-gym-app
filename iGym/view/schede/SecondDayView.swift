@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SecondDayView: View {
-    let scheda = getData(filename: "scheda_b.json")
+    let scheda = getData(type: "b")
 
     var body: some View {
         ExercisListView(scheda: scheda)

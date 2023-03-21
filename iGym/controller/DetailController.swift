@@ -12,10 +12,12 @@ func detail(a: Int, b: Int, c: Int) -> String {
     return "\(a) srerie da \(b) ripetizioni con riposo di \(c) secondi"
 }
 
-func getData(filename: String) -> [Scheda] {
-    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
+func getData(type: String) -> [Scheda] {
+    var user: UserModel = getUser()
+
+    guard let file = Bundle.main.url(forResource: "scheda_\(user.username)_\(type).json", withExtension: nil)
     else {
-        fatalError("Couldn't find \(filename) in main bundle.")
+        fatalError("Couldn't find scheda_\(user.username)_\(type).json in main bundle.")
     }
     return NetworkPackage().loadFromJson(file: file)
 }

@@ -13,6 +13,8 @@ struct CreateUserView: View {
 
     @State private var username: String = ""
     @State private var password: String = ""
+    @State private var avatar: String = "figure.climbing"
+    @State private var isAdmin: Bool = false
     @FetchRequest(sortDescriptors: [SortDescriptor(\.username, order: .reverse)]) var user: FetchedResults<User>
     
     var body: some View {
@@ -30,12 +32,13 @@ struct CreateUserView: View {
                                 .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
                                 .textInputAutocapitalization(.never)
                                 .disableAutocorrection(true)
+                            Toggle("This user is admin", isOn: $isAdmin)
                         }
                         .textFieldStyle(.roundedBorder)
                         HStack {
                             Spacer()
                             Button {
-                                DataController().addUser(username: username, password: password, avatar: "", context: manageObjectContext)
+                                DataController().addUser(username: username, password: password, avatar: avatar, admin: isAdmin, context: manageObjectContext)
                             } label: {
                                 Text("Save").foregroundColor(.green)
                             }
@@ -53,7 +56,11 @@ struct CreateUserView: View {
                 .onDelete(perform: deleteUser)
             }
             .listStyle(.plain)
+            .background(BackgroundAppView().paleteGreen1.ignoresSafeArea())
+            .scrollContentBackground(.hidden)
         }
+        .background(BackgroundAppView().paleteGreen1.ignoresSafeArea())
+        .scrollContentBackground(.hidden)
         .navigationBarTitle("Admin")
     }
     
