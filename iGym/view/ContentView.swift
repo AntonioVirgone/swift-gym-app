@@ -10,7 +10,6 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @State private var user: UserModel = getUser()
 
     var body: some View {
         NavigationView {
@@ -21,7 +20,6 @@ struct ContentView: View {
                         Image("app-icon")
                             .cornerRadius(60)
                             .padding(EdgeInsets(top: 0, leading: 0, bottom: 80, trailing: 0))
-                        Text("Hello \(user.username)")
                         SchedaButtonView(name: "Giorno A", destination: FirstDayView())
                         SchedaButtonView(name: "Giorno B", destination: SecondDayView())
                         SchedaButtonView(name: "Giorno C", destination: ThirdDayView())

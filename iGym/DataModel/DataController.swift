@@ -28,6 +28,7 @@ class DataController: ObservableObject {
         }
     }
     
+    // REPETITION
     func addRepetition(number: Double, weigth: Double, trainingCode: String, context: NSManagedObjectContext) {
         let repetition = Repetition(context: context)
         repetition.id = UUID()
@@ -48,6 +49,7 @@ class DataController: ObservableObject {
         save(context: context)
     }
     
+    // USER
     func addUser(username: String, password: String, avatar: String, admin: Bool, context: NSManagedObjectContext) {
         let user = User(context: context)
         user.id = UUID()

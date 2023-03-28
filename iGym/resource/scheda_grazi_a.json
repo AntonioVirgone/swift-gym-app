@@ -4,42 +4,53 @@
         "excercises": [
             {
                 "code": "valuexxxxx",
-                "value": "Cardio tapy 5’ cammino + 10’ (alterno 1’ corsa e 1’ cammino)"
+                "value": "Cardio tapy 10’"
+            },
+            {
+                "code": "valuexxxxx",
+                "value": "Step up + Squat 40+15"
             },
             {
                 "code": "value00001",
-                "value": "Leg Press ",
-                "serie":4,
+                "value": "Leg Press",
+                "serie":3,
                 "ripetizioni": 15,
                 "riposo": 60
             },
             {
                 "code": "value00002",
-                "value": "Leg Extension ",
+                "value": "Adductor Machine",
                 "serie":3,
                 "ripetizioni": 15,
+                "riposo": 60
+            },
+            {
+                "code": "valuexxxxx",
+                "value": "Vogatore 8'"
+            },
+            {
+                "code": "valuexxxxx",
+                "value": "Pulley",
+                "serie":3,
+                "ripetizioni": 12,
                 "riposo": 60
             }
         ]
     },
     {
-        "title": "Circuito 2: 4 serie (rest.2’)",
+        "title": "Circuito 2: (rest.2’)",
         "excercises": [
             {
                 "code": "valuexxxxx",
-                "value": "Squat con kettleball 20"
+                "value": "Ponte gluteo con disco 15"
             },
             {
                 "code": "valuexxxxx",
-                "value": "Skeep alto 30 secondi"
+                "value": "Franch Press supina 12"
             },
             {
                 "code": "valuexxxxx",
-                "value": "Step up continuo 60 secondi a gamba"
-            },
-            {
-                "code": "valuexxxxx",
-                "value": "Plank max"
+                "value": "Scambi di gambe 30"
             }
         ]
     },
@@ -48,21 +59,7 @@
         "excercises": [
             {
                 "code": "valuexxxxx",
-                "value": "Climbe 10 minuti"
-            },
-            {
-                "code": "value00003",
-                "value": "Crunch ",
-                "serie":3,
-                "ripetizioni": 20,
-                "riposo": 30
-            },
-            {
-                "code": "value00004",
-                "value": "Crunch obliqui ",
-                "serie":3,
-                "ripetizioni": 50,
-                "riposo": 30
+                "value": "Cardio tapy 10’"
             }
         ]
     }

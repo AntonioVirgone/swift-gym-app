@@ -14,6 +14,7 @@ struct iGymApp: App {
     var body: some Scene {
         WindowGroup {
             SplashScreenView().environment(\.managedObjectContext, dataController.container.viewContext)
+                .preferredColorScheme(.light)
         }
     }
 }

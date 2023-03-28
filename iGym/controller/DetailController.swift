@@ -13,7 +13,7 @@ func detail(a: Int, b: Int, c: Int) -> String {
 }
 
 func getData(type: String) -> [Scheda] {
-    var user: UserModel = getUser()
+    let user: UserModel = getUser()
 
     guard let file = Bundle.main.url(forResource: "scheda_\(user.username)_\(type).json", withExtension: nil)
     else {
